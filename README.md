@@ -1,1 +1,1 @@
-# THE_ODIN_PROJECT
+# the_odin_project
