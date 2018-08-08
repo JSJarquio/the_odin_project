@@ -1,0 +1,98 @@
+.toplinks {
+	min-width: 800px;
+}
+
+p.about a, p.store a {
+	font-family: "Helvetica", Helvetica, sans-serif;
+	text-decoration: none;
+	color: #4d4d4d;
+	font-size: 10pt;
+	padding-left: 20px;
+	margin-top: 25px;
+	margin-right: 2px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	float: left;
+}
+
+p.gmail a,
+p.images a {
+	font-family: "Helvetica", Helvetica, sans-serif;
+	text-decoration: none;
+	color: #4d4d4d;
+	font-size: 10pt;
+	padding-left: 5px;
+	margin-top: 25px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	float: right;
+}
+
+p.about:hover a,
+p.store:hover a,
+p.gmail:hover a,
+p.images:hover a {
+	text-decoration: underline;
+}
+
+img.gaii {
+	height: 30px;
+	width: 30px;
+	padding-left: 5px;
+	margin-top: 18px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	float: right;
+}
+
+img.gaii:hover {
+	filter: drop-shadow(2px 2px 2px lightgrey);
+}
+
+.signin {
+	height: 30px;
+	width: 100px;
+	color: blue;
+	padding-left: 5px;
+	margin-top: 18px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	float: right;
+}
+
+.google {
+	min-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.google img {
+	display: block;
+	padding-top: 200px;
+	padding-bottom: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.google input[type=text] {
+	display: block;
+    width: 500px;
+	height: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 500px;
+	filter: drop-shadow(2px 2px 2px lightgrey);
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.google input[type=text]:hover {
+	filter: drop-shadow(2px 2px 4px lightgrey);
+}
+
+div.google input.searchbuttons {
+	background-color: lightgrey;
+}
