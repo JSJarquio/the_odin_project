@@ -1,8 +1,8 @@
 div.topbar {
 	display: block;
-	min-width: 955px;
-	position: absolute;
-	top: 0;
+	min-width: 980px;
+	margin-right: auto;
+	margin-left: auto;
 	font-family: "Helvetica", Helvetica, sans-serif;
 	font-size: 10pt;
 }
@@ -34,7 +34,7 @@ p.gmail a {
 	color: #4d4d4d;
 	padding-left: 5px;
 	margin-top: 25px;
-	margin-right: 10px;
+	margin-right: 6px;
 	margin-bottom: 10px;
 	float: right;
 }
@@ -44,7 +44,7 @@ p.images a {
 	color: #4d4d4d;
 	padding-left: 5px;
 	margin-top: 25px;
-	margin-right: 10px;
+	margin-right: 6px;
 	margin-bottom: 10px;
 	margin-left: 5px;
 	float: right;
@@ -85,20 +85,21 @@ img.gaii:hover {
 	font-weight: bold;
 	color: white;
 	padding: 0px;
-	margin-top: 18px;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	margin-left: 5px;
+	margin: 18px 25px 10px 5px;
 	float: right;
 }
 	
 .signin:hover {
-	filter: drop-shadow(1px 1px 1px lightgrey);
+	filter: drop-shadow(0px 1px 1px lightgrey);
+}
+
+body div {
+	position: relative;
 }
 
 .google {
 	display: block;
-	min-width: 977px;
+	min-width: 985px;
 	margin-top: 55px;
 	margin-right: auto;
 	margin-left: auto;
@@ -118,11 +119,13 @@ img.gaii:hover {
 	border: 1px solid #e7e7e7;
     width: 485px;
 	height: 44px;
+	padding-left: 16px;
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 28px;
 	filter: drop-shadow(0px 2px 1px lightgrey);
-	clear: both;
+	font-family: "Helvetica", sans-serif;
+	font-size: 12pt;
 }
 
 .google input[type=text]:hover {
@@ -130,94 +133,90 @@ img.gaii:hover {
 }
 
 div.searchbuttons {
-	display: block;
-	margin: auto;
-	padding-bottom: 20px;
-	text-align: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin-right: auto;
+	margin-left: auto;
+	min-width: 985px;
 }
 
-.searchbutton1 {
-	padding: 12px;
+.googlesearch {
+	padding: 11px 15px 11px 15px;
 	border: none;
 	border-radius: 2px;
-	margin: 3px;
+	margin-right: 5px;
 	font-family: "Arial", sans-serif;
 	font-weight: bold;
 	color: grey;
 	background-color: #f0f0f0;
 }
 
-.searchbutton2 {
-	padding: 12px;
+.luckysearch {
+	padding: 11px 15px 11px 15px;
 	border: none;
 	border-radius: 2px;
-	margin: 3px;
+	margin-left: 2px;
 	font-family: "Arial", sans-serif;
 	font-weight: bold;
 	color: grey;
 	background-color: #f0f0f0;
 }
 
-.searchbutton1:hover {
+.googlesearch:hover {
 	color: black;
-	padding: 11px;
+	padding: 10px 14px 10px 14px;
 	border: 1px solid lightgrey;
 }
 
-.searchbutton2:hover {
+.luckysearch:hover {
 	color: black;
-	padding: 11px;
+	padding: 10px 14px 10px 14px;
 	border: 1px solid lightgrey;
 }
 
-/* need to work on bottom bar background color */
-div.bottombar {
-	background-color: #e7e7e7;
-	clear: both;
-	display: block;
-	min-width: 960px;
+/* 	work on .bottombar and leaving it out of
+	the window when the window gets resized and scrolled up */
+div.footer {
+	background-color: #f0f0f0;
 	font-family: "Helvetica", Helvetica, sans-serif;
 	font-size: 10pt;
+	padding-top: 4px;
+	padding-bottom: 2px;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	border-top: 1px solid lightgrey;
+	display: block;
+	float: right;
+	position: absolute;
+	bottom: 0;
+	height: 35px;
+	width: 100%;
+	min-width: 985px;
 }
 
-a.advertising {
-	text-decoration: none;
-	color: #4d4d4d;
-	padding-left: 20px;
-	margin-top: 25px;
-	margin-right: 2px;
-	margin-bottom: 10px;
-	margin-left: 3px;
-	float: left;
+div.footer {
+	position: absolute;
+	bottom: 0;
 }
 
+a.advertising,
 a.business {
 	text-decoration: none;
 	color: #4d4d4d;
 	padding-left: 20px;
-	margin-top: 25px;
-	margin-right: 2px;
-	margin-bottom: 10px;
-	margin-left: 3px;
+	margin: 10px 2px 10px 3px;
 	float: left;
 }
 
-a.privacy {
-	text-decoration: none;
-	color: #4d4d4d;
-	padding-left: 5px;
-	margin-top: 25px;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	float: right;
-}
-
+a.privacy,
 a.terms {
 	text-decoration: none;
 	color: #4d4d4d;
-	padding-left: 5px;
-	margin-top: 25px;
-	margin-right: 10px;
+	padding-left: 26px;
+	margin-top: 10px;
+	margin-right: auto;
 	margin-bottom: 10px;
 	float: right;
 }
@@ -225,9 +224,9 @@ a.terms {
 a.settings {
 	text-decoration: none;
 	color: #4d4d4d;
-	padding-left: 5px;
-	margin-top: 25px;
-	margin-right: 10px;
+	padding-left: 26px;
+	margin-top: 10px;
+	margin-right: 24px;
 	margin-bottom: 10px;
 	float: right;
 }
