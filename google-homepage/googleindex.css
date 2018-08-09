@@ -1,26 +1,47 @@
-.toplinks {
-	min-width: 800px;
+div.topbar {
+	display: block;
+	min-width: 955px;
+	position: absolute;
+	top: 0;
+	font-family: "Helvetica", Helvetica, sans-serif;
+	font-size: 10pt;
 }
 
-p.about a, p.store a {
-	font-family: "Helvetica", Helvetica, sans-serif;
+p.about a {
 	text-decoration: none;
 	color: #4d4d4d;
-	font-size: 10pt;
 	padding-left: 20px;
 	margin-top: 25px;
 	margin-right: 2px;
 	margin-bottom: 10px;
-	margin-left: 5px;
+	margin-left: 3px;
 	float: left;
 }
 
-p.gmail a,
-p.images a {
-	font-family: "Helvetica", sans-serif;
+p.store a {
 	text-decoration: none;
 	color: #4d4d4d;
-	font-size: 10pt;
+	padding-left: 16px;
+	margin-top: 25px;
+	margin-right: 2px;
+	margin-bottom: 10px;
+	margin-left: 2px;
+	float: left;
+}
+
+p.gmail a {
+	text-decoration: none;
+	color: #4d4d4d;
+	padding-left: 5px;
+	margin-top: 25px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	float: right;
+}
+
+p.images a {
+	text-decoration: none;
+	color: #4d4d4d;
 	padding-left: 5px;
 	margin-top: 25px;
 	margin-right: 10px;
@@ -39,6 +60,8 @@ p.images:hover a {
 img.gaii {
 	height: 30px;
 	width: 30px;
+	border: none;
+	border-radius: 7px 7px 7px 10px;
 	padding-left: 5px;
 	margin-top: 18px;
 	margin-right: 10px;
@@ -53,50 +76,166 @@ img.gaii:hover {
 
 .signin {
 	height: 30px;
-	width: 100px;
-	text-align: center;
-	color: white;
-	font-family: "Helvetica", sans-serif;
+	width: 70px;
 	background-color: #4C7CDC;
 	border: none;
-	padding-left: 5px;
+	border-radius: 3px;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	padding: 0px;
 	margin-top: 18px;
 	margin-right: 10px;
 	margin-bottom: 10px;
 	margin-left: 5px;
 	float: right;
 }
+	
+.signin:hover {
+	filter: drop-shadow(1px 1px 1px lightgrey);
+}
 
 .google {
-	min-width: 1000px;
-	margin-left: auto;
+	display: block;
+	min-width: 977px;
+	margin-top: 55px;
 	margin-right: auto;
+	margin-left: auto;
+	clear: both;
 }
 
 .google img {
 	display: block;
-	padding-top: 200px;
-	padding-bottom: 10px;
+	padding-top: 150px;
+	padding-bottom: 20px;
 	margin-right: auto;
 	margin-left: auto;
 }
 
 .google input[type=text] {
 	display: block;
-    width: 500px;
-	height: 40px;
+	border: 1px solid #e7e7e7;
+    width: 485px;
+	height: 44px;
 	margin-right: auto;
 	margin-left: auto;
-	margin-bottom: 500px;
-	filter: drop-shadow(2px 2px 2px lightgrey);
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+	margin-bottom: 28px;
+	filter: drop-shadow(0px 2px 1px lightgrey);
+	clear: both;
 }
 
 .google input[type=text]:hover {
-	filter: drop-shadow(2px 2px 4px lightgrey);
+	filter: drop-shadow(0px 3px 2px lightgrey);
 }
 
-div.google input.searchbuttons {
-	background-color: lightgrey;
+div.searchbuttons {
+	display: block;
+	margin: auto;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.searchbutton1 {
+	padding: 12px;
+	border: none;
+	border-radius: 2px;
+	margin: 3px;
+	font-family: "Arial", sans-serif;
+	font-weight: bold;
+	color: grey;
+	background-color: #f0f0f0;
+}
+
+.searchbutton2 {
+	padding: 12px;
+	border: none;
+	border-radius: 2px;
+	margin: 3px;
+	font-family: "Arial", sans-serif;
+	font-weight: bold;
+	color: grey;
+	background-color: #f0f0f0;
+}
+
+.searchbutton1:hover {
+	color: black;
+	padding: 11px;
+	border: 1px solid lightgrey;
+}
+
+.searchbutton2:hover {
+	color: black;
+	padding: 11px;
+	border: 1px solid lightgrey;
+}
+
+/* need to work on bottom bar background color */
+div.bottombar {
+	background-color: #e7e7e7;
+	clear: both;
+	display: block;
+	min-width: 960px;
+	font-family: "Helvetica", Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+a.advertising {
+	text-decoration: none;
+	color: #4d4d4d;
+	padding-left: 20px;
+	margin-top: 25px;
+	margin-right: 2px;
+	margin-bottom: 10px;
+	margin-left: 3px;
+	float: left;
+}
+
+a.business {
+	text-decoration: none;
+	color: #4d4d4d;
+	padding-left: 20px;
+	margin-top: 25px;
+	margin-right: 2px;
+	margin-bottom: 10px;
+	margin-left: 3px;
+	float: left;
+}
+
+a.privacy {
+	text-decoration: none;
+	color: #4d4d4d;
+	padding-left: 5px;
+	margin-top: 25px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	float: right;
+}
+
+a.terms {
+	text-decoration: none;
+	color: #4d4d4d;
+	padding-left: 5px;
+	margin-top: 25px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	float: right;
+}
+
+a.settings {
+	text-decoration: none;
+	color: #4d4d4d;
+	padding-left: 5px;
+	margin-top: 25px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	float: right;
+}
+
+a.advertising:hover,
+a.business:hover,
+a.privacy:hover,
+a.terms:hover,
+a.settings:hover {
+	text-decoration: underline;
 }
